@@ -24,7 +24,7 @@ urlpatterns = [
     path('tales/', include('tales.urls')),
     path('card/', include('cards.urls')),
     
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = 'tales.views.error_404'
 
