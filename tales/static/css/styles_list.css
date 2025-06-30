@@ -1,0 +1,34 @@
+body {
+    background-color: #292929; /* Color de fondo oscuro */
+    color: #f0e4d7; /* Color de texto claro */
+}
+
+header {
+    background: #292929;
+    color: #f0e4d7; /* Color de texto claro */
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px; /* Altura fija */
+    border: 1px solid #ccc; /* Opcional: borde para el contenedor */
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;    
+}
+
+.contenido-texto {
+    /* Estilos para el texto y el título */
+}
+
+.contenido-imagen {
+    flex: 0 0 auto;
+    width: 10%;
+}
+
+.contenido-imagen img {
+    height: 100%; /* Ajusta la imagen a la altura total del contenedor */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área sin perder sus proporciones */
+}

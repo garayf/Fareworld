@@ -1,0 +1,269 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Resume Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles_card_resume.css' %}" rel="stylesheet">
+</head>
+<body>
+<header class="container box">       
+    <div class="row justify-content-md-center">
+
+        <div class="col-10">
+            <h3>Edgar David Garay Forero</h3>
+            <p>Systems and computation engineer with knowledge in data bases, 
+            object-oriented programming, algorithms and data structures in several programming languages; with full stack development and automation experience, mainly oriented to web applications and services. 
+            High willingness to teamwork and learn new languages, framekorks 
+            and technologies.</p>
+            
+        </div>
+        <div class="col-2">
+            <img src="{% static 'cards/avatar.png' %}" class="img-fluid" alt="Landing Image" class="mb-3" width="150">
+        </div>
+                
+    </div>      
+</header>
+<section class="container">   
+    <div class="row">
+        <div class="col-sm-3 technologies box">
+            <h5>Technologies</h5>
+            <ul>- Python</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="85"></div>
+            </div>
+            <ul>- JavaScript</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="75"></div>
+            </div>
+            <ul>- React</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="80"></div>
+            </div>
+            <ul>- Java</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="50"></div>
+            </div>
+            <ul>- Docker</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="65"></div>
+            </div>
+            <ul>- .NET</ul>
+            <div class="progress-bar">
+                <div class="progress" data-fill="60"></div>
+            </div>
+        </div>
+    
+        <div class="col-sm-9 experience">
+            <h6>SOFTWARE ENGINEER Blackboard –Anthology | June 2022 — Today (fullstack)</h6>
+            <p>Design and implement different services associated to automation services for teachers and students</p>
+            <p>Design, implement, test and deploy diferente features and programs to analyze, 
+                efficiently process and display different data related to student activity in 
+                different courses ussing using a local tool named Aladdin.  
+                (Python, groovy, Rest, React )</p>
+
+            <h6>SOFTWARE ENGINEER Soluntech S.A.S. | October 2021 — March 2022 (fullstack)</h6>
+            <p>Design and implement different services associated for different clients 
+            <p>Design, implement and test different services Front and backend for 
+                the automation of processes in different companies using node js and react</p>
+
+            <h6>JUNIOR SOFTWARE ENGINEER NEIA S.A.S | September 2020 — Sept 2021</h6>
+            <p>Design and implement different services associated with electronic billing for different companies
+            <p>Design and implement different services and modules for the creation and cancellation of
+                electronic invoices using elixir and react.</p>
+
+        </div>
+    </div>
+</section>    
+
+
+<section class="container box"> 
+    <h2 class ="text-center">Projects</h2>
+    <div class="row">
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">Fareworld</h4>                        
+                        <p>Tales site</p>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Python - Django</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">Personal Page</h4>                        
+                        <P>you are seeing it</p>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Python - Django</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">HackerRank</h4>                        
+                        <ul>- Python</ul>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Python</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">Technologies</h4>                        
+                        <ul>- Python</ul>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Suprise this one has content on the back!</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">Technologies</h4>                        
+                        <ul>- Python</ul>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Suprise this one has content on the back!</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 project">
+            <div class="card card-flip h-100">
+                <div class="card-front">
+                    <div class="card-body">
+                        <i class="fa fa-search fa-5x float-right"></i>
+                        <h4 class="card-title">Technologies</h4>                        
+                        <ul>- Python</ul>
+                        <div class="click-card">
+                            <p> &#x21bb;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back bg-white">
+                    <div class="card-body">
+                        <h4 class="card-title">Technologies</h4>
+                        <p class="card-text">Suprise this one has content on the back!</p>
+                        <div class="click-card">
+                            <a href="#" class="btn btn-outline-secondary">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section>
+    <div class="container box">
+        <h4 class="text-center">Education</h4>
+        <p>Enterprise software architecture at Pontifical Xavierian University January 2021 — December 2021 </p>
+        <p>Computer and Systems Engineering at National University of Colombia August 2015 — July 2020 </p>
+
+    </div>
+</section>
+
+<footer class="text-center py-4">
+    <p>&copy; 2023 David Garay.</p>
+</footer>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // JavaScript
+    document.querySelectorAll('.card-flip').forEach(card => {
+        card.addEventListener('click', function() {
+            this.classList.toggle('flipped');
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var allProgressBars = document.querySelectorAll('.progress');
+
+    allProgressBars.forEach(function(bar) {
+        var fillPercentage = bar.getAttribute('data-fill');
+        setTimeout(function() {
+            bar.style.width = fillPercentage + '%';
+        }, 100); 
+        });
+    });
+</script>
+
+</body>
+</html>

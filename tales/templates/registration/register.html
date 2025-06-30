@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareworld Tales register Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles_landing.css' %}" rel="stylesheet">
+</head>
+<body>
+
+
+{% include '../tales/navbar.html' %}
+
+<main class="container d-flex align-items-center justify-content-center" style="min-height: 70vh;">
+<div class="row justify-content-center custom-row">
+        <form method="post">
+            {% csrf_token %}
+            <div class="custom-form-style">
+                {{ form.as_p }}
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">register</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+
+<!-- Footer: Un lugar para información adicional, enlaces a otras páginas, redes sociales, etc. -->
+<footer class="text-center py-4">
+    <p>&copy; 2023 Fareworld. All memories preserved.</p>
+</footer>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareworld Tales Add Tale Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="{% static 'css/styles_list.css' %}" rel="stylesheet">
+</head>
+<body>
+{% include '../tales/navbar.html' %}
+<main class="container">
+    <h1>Listado de Historias</h1>
+    <div class="tales-list">
+        {% for tale in tales %}
+        <div class="contenedor">
+            <div class="contenido-texto">
+                <h2>{{ tale.titulo }}</h2>
+                <p>{{ tale.contenido }}</p>
+            </div>
+            <div class="contenido-imagen">
+                <img src="{{ tale.imagen.url }}" class="img-fluid" alt="{{ tale.imagen }}">
+            </div>
+        </div>
+        {% endfor %}
+</main>
+<!-- Footer: Un lugar para información adicional, enlaces a otras páginas, redes sociales, etc. -->
+<footer class="text-center py-4">
+    <p>&copy; 2023 Fareworld. All rights reserved.</p>
+</footer>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

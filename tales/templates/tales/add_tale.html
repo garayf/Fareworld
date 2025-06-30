@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareworld Tales Add Tale Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <div class="mb-3">
+        <label for="{{ form.titulo.id_for_label }}" class="form-label">Title</label>
+        <input type="text" name="{{ form.titulo.name }}" id="{{ form.titulo.id_for_label }}" class="form-control" value="{{ form.titulo.value|default:'' }}">
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.contenido.id_for_label }}" class="form-label">Content</label>
+        <textarea name="{{ form.contenido.name }}" id="{{ form.contenido.id_for_label }}" class="form-control">{{ form.contenido.value|default:'' }}</textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="{{ form.imagen.id_for_label }}" class="form-label">Image</label>
+        <input type="file" name="{{ form.imagen.name }}" id="{{ form.imagen.id_for_label }}" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Tale</button>
+</form>
+<!-- Footer: Un lugar para información adicional, enlaces a otras páginas, redes sociales, etc. -->
+<footer class="text-center py-4">
+    <p>&copy; 2023 Fareworld. All rights reserved.</p>
+</footer>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

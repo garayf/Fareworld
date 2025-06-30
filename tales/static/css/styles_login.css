@@ -1,0 +1,51 @@
+.navbar {
+    background-color: #292929;
+    background-size: cover;
+}
+
+.btn-primary {
+    background-color: #916f54;
+    color: #292929;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #916f54;
+    color: #afa9a9;
+}
+
+.btn-primary:focus, .btn-primary:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #916f54 !important;
+    border-color: #916f54 !important;
+}
+
+.custom-form-input {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    max-width: 400px; /* O el ancho máximo que prefieras */
+    margin: auto; /* Centra el input si el contenedor es más ancho */
+}
+
+.custom-form-style input[type="text"], 
+.custom-form-style input[type="password"], 
+.custom-form-style input[type="email"] {
+    width: 100%; /* Ejemplo: Establece el ancho al 100% */
+    /* Agrega aquí más estilos según tus necesidades */
+}
+
+.custom-row {
+    max-width: 40%;
+    margin: auto; /* Centra el div si es más pequeño que el contenedor */
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #916f54;
+}

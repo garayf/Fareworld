@@ -1,0 +1,62 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Landing Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles_card_landing.css' %}" rel="stylesheet">
+</head>
+<body>
+
+    <section>
+        <div class="avatar-container">       
+            <div class="left-sidebar">
+                <div class="left-side-div">
+                    <h4 class="text-center">Edgar David Garay Forero</h4>
+                </div>
+            </div>
+            <img src="{% static 'cards/avatar.png' %}" alt="Avatar" class="avatar"/>
+            <div class="rigth-sidebar">
+                <div class="rigth-side-div resume">
+                    <p>Resume</p>
+                </div>
+                <div class="rigth-side-div Hackerrank">
+                    <p>HackerRank</p>
+                </div>
+                <div class="rigth-side-div Projects">
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>        
+    </section>  
+    <div class="footer text-center py-4">
+        <p>&copy; 2023 David Garay.</p>
+    </div>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // JavaScript
+    document.querySelector('.resume').addEventListener('click', function() {
+        window.location.href = 'resume'; 
+    });
+
+    document.querySelector('.Hackerrank').addEventListener('click', function() {
+        window.location.href = 'https://www.hackerrank.com/profile/edgarayf1'; 
+    });
+
+    document.querySelector('.Projects').addEventListener('click', function() {
+        window.location.href = 'https://github.com/garayf?tab=repositories'; 
+    });
+
+    
+</script>
+</body>
+</html>

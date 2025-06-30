@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fareworld Tales Landing Page</title>
+
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles_landing.css' %}" rel="stylesheet">
+</head>
+<body>
+{% include '../tales/navbar.html' %}
+<!-- Header: Usualmente contiene el logo y el nombre de tu sitio -->
+<header class="text-center py-5">
+    <h1>Welcome to Fareworld!</h1>
+    <p>Survive, share, and discover stories in a post-apocalyptic world.</p>
+</header>
+
+<!-- Main Content: Aquí puedes destacar las características principales de tu sitio o aplicación -->
+<main class="container my-5">
+    <div class="row">
+        <!-- Característica 1 -->
+        <div class="col-md-4">
+            <h2>Survive the Apocalypse</h2>
+            <p>Explore a world shattered by the end times and the stories it birthed.</p>
+        </div>
+        <!-- Característica 2 -->
+        <div class="col-md-4">
+            <h2>Discover Dark Tales</h2>
+            <p>Unearth tales from a world that once was.</p>
+        </div>
+        <!-- Característica 3 -->
+        <div class="col-md-4">
+            <h2>Connect with Survivors</h2>
+            <p>Engage with fellow survivors and share tales of the old world and the new.</p>
+        </div>
+    </div>
+</main>
+
+<div class="container my-5">
+    <div class="row">
+        <!-- Característica 1 -->
+        <div class="col-md-4">
+            <img src="{% static 'tales/city.jpg' %}" class="img-fluid" alt="Landing Image" class="mb-3">
+        </div>
+        <!-- Característica 2 -->
+        <div class="col-md-4">
+            <img src="{% static 'tales/read.jpg' %}" class="img-fluid" alt="Landing Image" class="mb-3">
+        </div>
+        <!-- Característica 3 -->
+        <div class="col-md-4">
+            <img src="{% static 'tales/survive.jpg' %}" class="img-fluid" alt="Landing Image" class="mb-3">
+        </div>
+    </div>
+</div>
+
+
+<!-- Call to Action: Un área diseñada para guiar a los usuarios a realizar una acción específica, como registrarse o iniciar sesión -->
+<section class="container py-5">
+    <div class="text-center">
+        <h2>Join the remnants of civilization and dive into the tales of Fareworld!</h2>        
+    </div>
+</section>
+
+<!-- Footer: Un lugar para información adicional, enlaces a otras páginas, redes sociales, etc. -->
+<footer class="text-center py-4">
+    <p>&copy; 2023 Fareworld. All memories preserved.</p>
+</footer>
+
+<!-- Incluir Bootstrap JS y jQuery (necesario para ciertas funciones de Bootstrap) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
